@@ -1,0 +1,4 @@
+D:\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+D:\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+D:\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+D:\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
