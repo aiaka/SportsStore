@@ -36,9 +36,9 @@ namespace SportsStore.WebUI.Infrastructure
 			// конфигурирование контейнера
 			Mock<IProductRepository> mock = new Mock<IProductRepository>();
 			mock.Setup(m => m.Products).Returns(new List<Product> {
-			  new Product { Name = "Football", Price = 25 },
-			  new Product { Name = "Surf board", Price = 179 },
-			  new Product { Name = "Running shoes", Price = 95 }
+			  new Product { Name = "Football", Price = 25, Category="Watersports" },
+			  new Product { Name = "Surf board", Price = 179, Category="Soccer" },
+			  new Product { Name = "Running shoes", Price = 95, Category="Chess" }
 			}.AsQueryable());
 
 			ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object);
