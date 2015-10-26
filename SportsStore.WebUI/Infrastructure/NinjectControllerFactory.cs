@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using SportsStore.Domain.Entities;
 using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Concrete;
+using System.Configuration;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -36,12 +38,21 @@ namespace SportsStore.WebUI.Infrastructure
 			// конфигурирование контейнера
 			Mock<IProductRepository> mock = new Mock<IProductRepository>();
 			mock.Setup(m => m.Products).Returns(new List<Product> {
-			  new Product { Name = "Football", Price = 25, Category="Watersports" },
-			  new Product { Name = "Surf board", Price = 179, Category="Soccer" },
-			  new Product { Name = "Running shoes", Price = 95, Category="Chess" }
+			  new Product { Name = "Football", Price = 25, Category="Watersports", ProductID=1 },
+			  new Product { Name = "Surf board", Price = 179, Category="Soccer", ProductID=2 },
+			  new Product { Name = "Running shoes", Price = 95, Category="Chess", ProductID=3 }
 			}.AsQueryable());
 
 			ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object);
+
+			EmailSettings emailSettings = new EmailSettings
+			{
+				WriteAsFile = bool.Parse(ConfigurationManager
+				  .AppSettings["Email.WriteAsFile"] ?? "false")
+			};
+			ninjectKernel.Bind<IOrderProcessor>()
+			  .To<EmailOrderProcessor>()
+			  .WithConstructorArgument("settings", emailSettings);
 		}
 	}
 }
