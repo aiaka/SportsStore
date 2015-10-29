@@ -36,14 +36,15 @@ namespace SportsStore.WebUI.Infrastructure
 		private void AddBindings ()
 		{
 			// конфигурирование контейнера
-			Mock<IProductRepository> mock = new Mock<IProductRepository>();
-			mock.Setup(m => m.Products).Returns(new List<Product> {
-			  new Product { Name = "Football", Price = 25, Category="Watersports", ProductID=1 },
-			  new Product { Name = "Surf board", Price = 179, Category="Soccer", ProductID=2 },
-			  new Product { Name = "Running shoes", Price = 95, Category="Chess", ProductID=3 }
-			}.AsQueryable());
+			//Mock<IProductRepository> mock = new Mock<IProductRepository>();
+			//mock.Setup(m => m.Products).Returns(new List<Product> {
+			//  new Product { Name = "Football", Price = 25, Category="Watersports", ProductID=1 },
+			//  new Product { Name = "Surf board", Price = 179, Category="Soccer", ProductID=2 },
+			//  new Product { Name = "Running shoes", Price = 95, Category="Chess", ProductID=3 }
+			//}.AsQueryable());
 
-			ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object);
+			//ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object);
+			ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>();
 
 			EmailSettings emailSettings = new EmailSettings
 			{

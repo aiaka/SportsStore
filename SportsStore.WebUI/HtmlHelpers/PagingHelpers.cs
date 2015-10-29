@@ -24,7 +24,9 @@ namespace SportsStore.WebUI.HtmlHelpers
 				tag.InnerHtml = i.ToString();
 				if (i == pagingInfo.CurrentPage)
 					tag.AddCssClass("selected");
-				result.Append(tag.ToString());
+				TagBuilder liTag = new TagBuilder("li");
+				liTag.InnerHtml = tag.ToString();
+				result.Append(liTag.ToString());
 			}
 
 			return MvcHtmlString.Create(result.ToString());

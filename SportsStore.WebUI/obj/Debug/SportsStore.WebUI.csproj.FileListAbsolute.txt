@@ -92,3 +92,7 @@ D:\GitHub\SportsStore\SportsStore.WebUI\bin\ru\System.Web.WebPages.Razor.resourc
 D:\GitHub\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 D:\GitHub\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 D:\GitHub\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+D:\GitHub\SportsStore\SportsStore.WebUI\bin\PagedList.dll
+D:\GitHub\SportsStore\SportsStore.WebUI\bin\PagedList.Mvc.dll
+D:\GitHub\SportsStore\SportsStore.WebUI\bin\PagedList.xml
+D:\GitHub\SportsStore\SportsStore.WebUI\bin\PagedList.Mvc.xml

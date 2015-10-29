@@ -1,13 +1,13 @@
-﻿body {
+﻿/*body {
 	font-size: .85em;
 	font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 	color: #232323;
 	background-color: #fff;
-}
+}*/
 
-header, footer, nav, section {
+/*header, footer, nav, section {
 	display: block;
-}
+}*/
 
 
 /* Styles for basic forms
@@ -61,13 +61,13 @@ textarea {
 }
 
 BODY {
-	font-family: Cambria, Georgia, "Times New Roman";
-	margin: 0;
+	/*font-family: Cambria, Georgia, "Times New Roman";
+	margin: 0;*/
 }
 
-DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A {
+/*DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A {
 	font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
-}
+}*/
 
 DIV#header {
 	background-color: #444;
@@ -113,7 +113,7 @@ DIV.item {
 		margin: .4em 0 0 0;
 	}
 
-DIV.pager {
+/*DIV.pager {
 	text-align: right;
 	border-top: 2px solid silver;
 	padding: .5em 0 0 0;
@@ -134,7 +134,7 @@ DIV.pager {
 		DIV.pager A.selected {
 			background-color: #353535;
 			color: White;
-		}
+		}*/
 
 DIV#categories A {
 	font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial;
@@ -182,5 +182,5 @@ TFOOT TD { border-top: 1px dotted gray; font-weight: bold; }
 }
 DIV#cart { float:right; margin: .8em; color: Silver;
   background-color: #555; padding: .5em .5em .5em 1em; }
-DIV#cart A { text-decoration: none; padding: .4em 1em .4em 1em; line-height:2.1em;
-  margin-left: .5em; background-color: #333; color:White; border: 1px solid black;}
+/*DIV#cart A { text-decoration: none; padding: .4em 1em .4em 1em; line-height:2.1em;
+  margin-left: .5em; background-color: #333; color:White; border: 1px solid black;}*/

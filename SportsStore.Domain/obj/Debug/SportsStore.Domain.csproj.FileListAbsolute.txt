@@ -6,3 +6,7 @@ D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
 D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
 D:\GitHub\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 D:\GitHub\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+D:\GitHub\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
